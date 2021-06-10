@@ -1,0 +1,33 @@
+{
+    "type":"MCU",
+    "name":"SAMD21",
+    "title": "Microchip SAMD21 MCU",
+    "description":"Microchip Cortex-M0 MCU",
+    "Core": {
+        "num": 1,
+        "type":"Cortex-M0",
+        "Freq":200,
+        "DMIPS": 250,
+        "CoreMark": 680
+    },
+    "manufacturer": {
+        "vendor":"Microchip",
+        "homepage":"https://www.hdsc.com.cn/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/SAMD21.git"
+    },
+    "version":"1.0.0",
+    "series":["SAMD21FEUA"],
+    "package":["QFN32"],
+    "peripheral": ["ADC","XIP","USB","USART","SPI","IIC"],
+    "keywords": [
+        "dev-platform",
+        "Cortex-M0",
+        "Microchip",
+        "Cortex-M0",
+        "USB","PGA","ADC","I2C","USART","SPI",
+        "3.6V","1.8V"
+    ]
+}
