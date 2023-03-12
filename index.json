@@ -1,33 +1,36 @@
 {
-    "type":"MCU",
-    "name":"SAMD21",
-    "title": "Microchip SAMD21 MCU",
-    "description":"Microchip Cortex-M0 MCU",
+    "type":"SoC",
+    "name":"XY4100",
+    "title": "xinyisemi XY4100 SoC",
+    "description":"xinyisemi Cortex-M3 Cat.1SoC",
     "Core": {
-        "num": 1,
-        "type":"Cortex-M0",
-        "Freq":200,
+        "CoreNum": 1,
+        "Core":"Cortex-M3",
+        "Fmax":240,
         "DMIPS": 250,
         "CoreMark": 680
     },
     "manufacturer": {
-        "vendor":"Microchip",
-        "homepage":"https://www.hdsc.com.cn/"
+        "vendor":"xinyisemi",
+        "homepage":"http://www.xinyisemi.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/SoCXin/SAMD21.git"
+        "url": "https://github.com/SoCXin/XY4100.git"
     },
     "version":"1.0.0",
-    "series":["SAMD21FEUA"],
-    "package":["QFN32"],
+    "series":["XY4100"],
+    "package":["QFN52"],
     "peripheral": ["ADC","XIP","USB","USART","SPI","IIC"],
+    "temp": [-40,85],
+    "volt": [1.8,3.3],
+    "ESD": {
+        "HBM": 2000,
+        "CDM": 500
+    },
     "keywords": [
-        "dev-platform",
-        "Cortex-M0",
-        "Microchip",
-        "Cortex-M0",
-        "USB","PGA","ADC","I2C","USART","SPI",
-        "3.6V","1.8V"
+        "Cortex-M3",
+        "xinyisemi","40nm",
+        "DAC","ADC","I2C","LVD","SPI","LPUSART"
     ]
 }
